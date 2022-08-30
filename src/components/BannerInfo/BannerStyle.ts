@@ -42,6 +42,42 @@ export const BannerTitleText = styled.div`
 
 export const HeaderButtonDiv = styled.div<any>`
   padding: ${(props) => (props.padding ? props.padding : null)};
+
+  .play-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .play-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 3px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #fff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  .play-button:hover {
+    background-color: #fff;
+  }
+  .play-button:hover::before {
+    border-color: transparent transparent transparent black;
+  }
 `;
 
 // export const;

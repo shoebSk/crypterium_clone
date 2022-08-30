@@ -161,6 +161,7 @@ const PricingPlan = () => {
               <BannerHeader
                 fontSize="17px"
                 fontWeight="400"
+                color='black'
                 marginbottom="0"
                >
                 0.5 KH/s
@@ -294,6 +295,7 @@ const PricingPlan = () => {
                 fontSize="35px"
                 fontWeight="600"
                 marginbottom="0"
+
                 color="#4262c1">
                 Free
               </BannerHeader>
@@ -302,6 +304,7 @@ const PricingPlan = () => {
               <BannerHeader
                 fontSize="17px"
                 fontWeight="400"
+                color='black'
                 marginbottom="0"
                >
                 0.5 KH/s

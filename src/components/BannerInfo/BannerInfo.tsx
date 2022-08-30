@@ -30,7 +30,7 @@ const BannerInfo = () => {
               </PrimaryButton>
             </HeaderButtonDiv>
             <HeaderButtonDiv padding="0 15px 0 15px">
-              <span></span>
+              <span className="play-button"></span>
               Video Presentation
             </HeaderButtonDiv>
           </FlexBox>

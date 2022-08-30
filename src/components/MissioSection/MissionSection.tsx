@@ -32,7 +32,7 @@ const MissionSection = () => {
             as PDF documents, site-specific browsers, and desktop widgets.
           </BannerHeader>
 
-          <FlexBox justifyContent="flex-start" marginTop="1rem">
+          <FlexBox justifyContent="flex-start" margin='15px 0 15px 0'>
             <MissionLogo bgColor="#4262c1">
               <LogoImage height="25px" width="25px" src={LOCK} alt="" />
             </MissionLogo>
@@ -44,7 +44,7 @@ const MissionSection = () => {
               Register Account
             </BannerHeader>
           </FlexBox>
-          <FlexBox justifyContent="flex-start" marginTop="1rem">
+          <FlexBox justifyContent="flex-start" margin='15px 0 15px 0'>
             <MissionLogo bgColor="#694e96">
               <LogoImage height="25px" width="25px" src={SENT} alt="" />
             </MissionLogo>
@@ -56,7 +56,7 @@ const MissionSection = () => {
               Choose your plan
             </BannerHeader>
           </FlexBox>
-          <FlexBox justifyContent="flex-start" marginTop="1rem">
+          <FlexBox justifyContent="flex-start" margin='15px 0 15px 0'>
             <MissionLogo bgColor="#43c1a8">
               <LogoImage height="25px" width="25px" src={WALLET} alt="" />
             </MissionLogo>
