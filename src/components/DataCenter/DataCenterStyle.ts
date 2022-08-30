@@ -14,6 +14,7 @@ export const DataCenterImageWrpper = styled.div`
   figure {
     background: #1abc9c;
     margin: 0;
+    height: 100%;
   }
 
   figure img {

@@ -1,5 +1,6 @@
 import AdvantageSection from "./components/AdvantageSection/AdvantageSection";
 import BannerInfo from "./components/BannerInfo/BannerInfo";
+import BlogSection from "./components/BlogSection/BlogSection";
 import CalculatorSection from "./components/CalculatorSection/CalculatorSection";
 import { CalculatorBGWrap } from "./components/CalculatorSection/CalculatorSectionStyle";
 import DataCenter from "./components/DataCenter/DataCenter";
@@ -47,6 +48,7 @@ function App() {
       <MainWrapper maxWidth='970px'>
         <QuestionSection />
       </MainWrapper>
+      <BlogSection />
     </Container>
   );
 }

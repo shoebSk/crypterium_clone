@@ -20,8 +20,15 @@ export const BannerHeader = styled.h1<any>`
   color: ${(props) => (props.color ? props.color : null)};
 
   text-align: ${(props) => (props.textAlign ? props.textAlign : null)};
-  line-height: ${(props) => props.lineHeight ? props.lineHeight : null};
- 
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : null)};
+
+  cursor: ${(props) => (props.cursor ? props.cursor : null)};
+
+  transition: .3s;
+
+  &:hover {
+    color: ${(props) => (props.hoverColor ? props.hoverColor : null)};
+  }
 `;
 
 export const BannerTitleText = styled.div`
