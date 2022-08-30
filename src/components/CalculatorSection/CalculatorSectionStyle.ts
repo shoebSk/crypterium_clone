@@ -1,16 +1,17 @@
 import styled from "styled-components";
 import CALCULATOR_BG from "../../assets/images/calculator_bg.jpg";
 
-export const CalculatorBGWrap = styled.div`
+export const CalculatorBGWrap = styled.div<any>`
   background-image: url(${CALCULATOR_BG});
   width: 100%;
-  height: 120vh;
+  height: ${(props) => props.height ? props.height : '120vh'};
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   margin-bottom: 10rem;
+  margin-bottom: ${(props) => props.marginBottom ? props.marginBottom : '10rem'};
 `;
 
 export const CalculatorSectionWrapper = styled.div`

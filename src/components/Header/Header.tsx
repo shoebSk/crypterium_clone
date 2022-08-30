@@ -31,7 +31,7 @@ const Header = () => {
           </NavLink>
         </FlexBox>
         <FlexBox display='flex' gap='20px'>
-          <PrimaryButton>Login</PrimaryButton>
+          <PrimaryButton hoverColor='#26de81'>Login</PrimaryButton>
           <SecondaryButton>Sign up</SecondaryButton>
           <NavLink href="">
             <LogoImage width='27px' src={flag} alt="flag" />

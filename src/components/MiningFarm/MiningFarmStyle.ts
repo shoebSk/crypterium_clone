@@ -7,6 +7,7 @@ export const MiningFarmWrapper = styled.div<any>`
   display: flex;
   align-items: baseline;
   width: 100%;
+  gap: ${(props) => props.gap ? props.gap : null};
 `;
 
 export const MiningFarmDiv = styled.div<any>`

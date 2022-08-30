@@ -24,7 +24,8 @@ export const BannerHeader = styled.h1<any>`
 
   cursor: ${(props) => (props.cursor ? props.cursor : null)};
 
-  transition: .3s;
+  transition: 0.3s;
+  opacity: ${(props) => (props.opacity ? props.opacity : null)};
 
   &:hover {
     color: ${(props) => (props.hoverColor ? props.hoverColor : null)};

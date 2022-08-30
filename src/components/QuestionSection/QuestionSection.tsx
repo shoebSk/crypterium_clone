@@ -114,7 +114,7 @@ const QuestionSection = () => {
             </div>
           </AnswersList>
         </FAQList>
-        <FlexBox marginTop='22px'>
+        <FlexBox margin='22px 0 0 0'>
           <PrimaryButton padding="20px 59px 20px 59px">Show More</PrimaryButton>
         </FlexBox>
       </div>

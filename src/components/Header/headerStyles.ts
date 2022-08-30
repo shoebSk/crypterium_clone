@@ -24,6 +24,11 @@ export const LogoImage = styled.img<any>`
   width: ${(props) => (props.width ? props.width : null)};
   height: ${(props) => (props.height ? props.height : null)};
   object-fit: ${(props) => (props.objFit ? props.objFit : null)};
+
+  &:hover {
+    /* fill: red; */
+    cursor: pointer;
+  }
 `;
 
 export const NavLink = styled.a`

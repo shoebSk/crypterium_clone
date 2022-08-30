@@ -15,6 +15,12 @@ export const PrimaryButton = styled.button<any>`
   border-radius: 30px;
 
   font-size: ${(props) => (props.fontSize ? props.fontSize : null)};
+  transition: .3s;
+
+  &:hover {
+    background-color: ${(props) =>
+      props.hoverColor ? props.hoverColor : null};
+  }
 `;
 
 export const SecondaryButton = styled.button`

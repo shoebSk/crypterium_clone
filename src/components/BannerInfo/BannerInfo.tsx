@@ -22,6 +22,7 @@ const BannerInfo = () => {
             <HeaderButtonDiv padding="0 15px 0 0">
               <PrimaryButton
                 bgColor="#f6003b"
+                hoverColor='#fb376e'
                 fontSize="15px"
                 width="185px"
                 padding="18px 30px 18px 30px">

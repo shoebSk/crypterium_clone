@@ -13,7 +13,6 @@ export const FlexBox = styled.div<any>`
   height: ${(props) => (props.height ? props.height : null)};
   margin: ${(props) => (props.margin ? props.margin : "0")};
   padding: ${(props) => (props.padding ? props.padding : "0")};
-  margin-top: ${(props) => (props.marginTop ? props.marginTop : "0")};
   flex-wrap: ${(Props) => (Props.flexWrap ? Props.flexWrap : null)};
   overflow-x: ${(props) => (props.overflowX ? props.overflowX : null)};
   margin-left: ${(props) => (props.marginLeft ? props.marginLeft : null)};
