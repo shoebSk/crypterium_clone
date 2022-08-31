@@ -67,7 +67,7 @@ export const FAQList = styled.div`
   padding: 0;
   margin: 0 auto;
 
-  &:first-child{
+  &:first-child {
     border-top: 1px solid #e7eaeb;
   }
 `;
@@ -75,7 +75,8 @@ export const FAQList = styled.div`
 export const AnswersList = styled.div`
   /*Question*/
   .question {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 500;
     color: black;
     margin: 0;
     width: 100%;
@@ -84,7 +85,6 @@ export const AnswersList = styled.div`
     cursor: pointer;
   }
 
- 
   /*Answer*/
   .answers {
     /* padding: 0px 15px; */
@@ -110,7 +110,7 @@ export const AnswersList = styled.div`
     cursor: pointer;
     position: absolute;
     right: 0;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #497bfd;
     transition: 0.3s ease;
 
@@ -122,7 +122,6 @@ export const AnswersList = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
     line-height: 100%;
     transition: 0.3s ease;
   }

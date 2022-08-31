@@ -9,14 +9,26 @@ export const FlexBox = styled.div<any>`
   flex-grow: ${(props) => (props.grow ? props.grow : "")};
 
   width: ${(props) => (props.width ? props.width : null)};
-  min-width: ${(props) => (props.minWidth ? props.minWidth : "")};
+  max-width: ${(props) => (props.maxWidth ? props.maxWidth : null)};
   height: ${(props) => (props.height ? props.height : null)};
   margin: ${(props) => (props.margin ? props.margin : "0")};
   padding: ${(props) => (props.padding ? props.padding : "0")};
   flex-wrap: ${(Props) => (Props.flexWrap ? Props.flexWrap : null)};
-  overflow-x: ${(props) => (props.overflowX ? props.overflowX : null)};
+  overflow: ${(props) => (props.overflow ? props.overflow : null)};
   margin-left: ${(props) => (props.marginLeft ? props.marginLeft : null)};
-  border-top: ${(props) => (props.borderTop ? props.borderTop : null)};
+  border: ${(props) => (props.border ? props.border : null)};
+  border-radius: ${(props) => (props.borderRadius ? props.borderRadius : null)};
   position: ${(props) => (props.position ? props.position : null)};
   gap: ${(props) => (props.gap ? props.gap : null)};
+
+  transition: 0.3s;
+
+  .mining-plans {
+    filter: grayscale(1);
+  }
+
+  .mining-plans:hover {
+    filter: grayscale(0);
+    color: black;
+  }
 `;

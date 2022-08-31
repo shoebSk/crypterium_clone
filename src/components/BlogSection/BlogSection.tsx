@@ -24,7 +24,7 @@ const BlogSection = () => {
             Latest News & Blog
           </BannerHeader>
         </div>
-        <FlexBox gap="2rem">
+        <FlexBox gap="2rem" alignItems="baseline">
           <div>
             <BlogCardWrap>
               <BannerHeader
@@ -37,11 +37,11 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="30px"
+                fontSize="24px"
                 fontWeight="600"
                 marginbottom="45px"
-                cursor='pointer'
-                hoverColor='#43c1a8'
+                cursor="pointer"
+                hoverColor="#43c1a8"
                 color="black">
                 The LH-Crypto project has reached $7 000
               </BannerHeader>
@@ -49,18 +49,19 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="18px"
+                fontSize="16px"
+                letterSpacing='1px'
+                lineHeight='1.6'
                 fontWeight="100"
-                marginbottom="45px">
-                The meetings will take place in the following cities: 15 January
-                – Milan, 16 January – Lugano, 17 January – Zurich, 18 Jan
+                marginbottom="30px">
+                Many desktop publishing packages and web page editors now use
+                Lorem Ipsum as their default model text, and a search for
               </BannerHeader>
               <BannerHeader
                 maxWidth="60px"
-                //   margin="0 auto"
-                fontSize="23px"
+                margin="0"
+                fontSize="18px"
                 fontWeight="600"
-                marginbottom="60px"
                 color="black">
                 September, 15 2017
               </BannerHeader>
@@ -78,10 +79,10 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="30px"
+                fontSize="24px"
                 fontWeight="600"
-                cursor='pointer'
-                hoverColor='#43c1a8'
+                cursor="pointer"
+                hoverColor="#43c1a8"
                 marginbottom="45px"
                 color="black">
                 New trends in UI/UX Design World Integration
@@ -90,19 +91,20 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="18px"
+                fontSize="16px"
+                letterSpacing='1px'
+                lineHeight='1.6'
                 fontWeight="100"
-                marginbottom="45px">
-                Specially for our VIP customers the LH Crypto team
-                representatives Alexander Smirnov and Antonis Lapos will conduct
-                a number of
+                marginbottom="30px">
+                Many desktop publishing packages and web page editors now use
+                Lorem Ipsum as their default model text, and a search fort a
+                number of
               </BannerHeader>
               <BannerHeader
                 maxWidth="60px"
-                //   margin="0 auto"
-                fontSize="23px"
+                margin="0"
+                fontSize="18px"
                 fontWeight="600"
-                marginbottom="60px"
                 color="black">
                 September, 15 2017
               </BannerHeader>
@@ -120,10 +122,10 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="30px"
+                fontSize="24px"
                 fontWeight="600"
-                cursor='pointer'
-                hoverColor='#43c1a8'
+                cursor="pointer"
+                hoverColor="#43c1a8"
                 marginbottom="45px"
                 color="black">
                 Crypto project has reached NormalCap!
@@ -133,18 +135,19 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="18px"
+                fontSize="16px"
+                letterSpacing='1px'
+                lineHeight='1.6'
                 fontWeight="100"
-                marginbottom="45px">
+                marginbottom="30px">
                 Many desktop publishing packages and web page editors now use
                 Lorem Ipsum as their default model text, and a search for
               </BannerHeader>
               <BannerHeader
                 maxWidth="60px"
-                //   margin="0 auto"
-                fontSize="23px"
+                margin="0"
+                fontSize="18px"
                 fontWeight="600"
-                marginbottom="60px"
                 color="black">
                 September, 15 2017
               </BannerHeader>
@@ -162,10 +165,10 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="30px"
+                fontSize="24px"
                 fontWeight="600"
-                cursor='pointer'
-                hoverColor='#43c1a8'
+                cursor="pointer"
+                hoverColor="#43c1a8"
                 marginbottom="45px"
                 color="black">
                 Start the redemption before the ICO completion
@@ -174,19 +177,19 @@ const BlogSection = () => {
               <BannerHeader
                 maxWidth="60px"
                 margin="0 auto"
-                fontSize="18px"
+                fontSize="16px"
+                letterSpacing='1px'
+                lineHeight='1.6'
                 fontWeight="100"
-                marginbottom="60px">
-                Lh-Crypto project buys 10% of the total amount of LHC tokens
-                sold at a double rate. Thus, even now, project investors can
-                receive an
+                marginbottom="30px">
+                Many desktop publishing packages and web page editors now use
+                Lorem Ipsum as their default model text, and a search for
               </BannerHeader>
               <BannerHeader
                 maxWidth="60px"
-                //   margin="0 auto"
-                fontSize="23px"
+                margin="0"
+                fontSize="18px"
                 fontWeight="600"
-                marginbottom="60px"
                 color="black">
                 September, 15 2017
               </BannerHeader>

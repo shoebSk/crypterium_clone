@@ -6,20 +6,17 @@ export const DataCenterImageWrpper = styled.div`
   grid-auto-rows: minmax(300px, auto);
   gap: 0.7rem;
 
-  /* background-color: rgba(   67, 193, 168, 0.66); */
-  /* transition: 0.3s ease-in-out; */
-
   cursor: pointer;
 
   figure {
     background: #1abc9c;
     margin: 0;
     height: 100%;
+    position: relative;
   }
 
   figure img {
     opacity: 1;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 
@@ -53,8 +50,21 @@ export const DataCenterImageWrpper = styled.div`
 
 export const DataImagesDiv = styled.div`
   position: relative;
-  /* width: 100%;
-  height: 100%; */
   background-color: #fff;
   overflow: hidden;
+  transition: 0.3s;
+  figure span {
+    display: none;
+  }
+  &:hover {
+    span {
+      display: block;
+      position: absolute;
+      color: #fff;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 `;

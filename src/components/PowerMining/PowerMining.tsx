@@ -2,7 +2,7 @@ import React from "react";
 import { FlexBox } from "../../shared/FlexBox/Flexbox";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import POWER from "../../assets/images/power.png";
-import { PrimaryButton } from "../../shared/Button/Button";
+import { GradientButton, PrimaryButton } from "../../shared/Button/Button";
 
 const PowerMining = () => {
   return (
@@ -22,13 +22,9 @@ const PowerMining = () => {
           functional programming styles.
         </BannerHeader>
 
-        <PrimaryButton
-          bgColor="#43c1a8"
-          fontSize="15px"
-          width="185px"
-          padding="18px 30px 18px 30px">
-          Discover
-        </PrimaryButton>
+        <GradientButton>
+          <span>Discover</span>
+        </GradientButton>
       </div>
       <div>
         <div>

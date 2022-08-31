@@ -13,7 +13,7 @@ const DataCenterImages = () => {
             src="https://demo.artureanec.com/html/crypterium/img/gallery_img/1.jpg"
             alt=""
           />
-          {/* <span>Modern Equipment</span> */}
+          <span>Modern Equipment</span>
         </figure>
       </DataImagesDiv>
       <DataImagesDiv className="second">
@@ -24,7 +24,7 @@ const DataCenterImages = () => {
             src="https://demo.artureanec.com/html/crypterium/img/gallery_img/2.jpg"
             alt=""
           />
-          {/* <span>Modern Equipment</span> */}
+          <span>Modern Equipment</span>
         </figure>
       </DataImagesDiv>
       <DataImagesDiv className="third">
@@ -35,7 +35,7 @@ const DataCenterImages = () => {
             src="https://demo.artureanec.com/html/crypterium/img/gallery_img/3.jpg"
             alt=""
           />
-          {/* <span>Modern Equipment</span> */}
+          <span>Modern Equipment</span>
         </figure>
       </DataImagesDiv>
       <DataImagesDiv className="fourth">
@@ -46,7 +46,7 @@ const DataCenterImages = () => {
             src="https://demo.artureanec.com/html/crypterium/img/gallery_img/4.jpg"
             alt=""
           />
-          {/* <span>Modern Equipment</span> */}
+          <span>Modern Equipment</span>
         </figure>
       </DataImagesDiv>
       <DataImagesDiv className="fifth">
@@ -57,7 +57,7 @@ const DataCenterImages = () => {
             src="https://demo.artureanec.com/html/crypterium/img/gallery_img/5.jpg"
             alt=""
           />
-          {/* <span>Modern Equipment</span> */}
+          <span>Modern Equipment</span>
         </figure>
       </DataImagesDiv>
     </DataCenterImageWrpper>

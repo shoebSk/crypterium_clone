@@ -20,7 +20,6 @@ const WorldMap = () => {
           textAlign="center"
           fontSize="40px"
           fontWeight="600"
-          marginbottom="60px"
           color="#fff">
           We have Users all Over the World
         </BannerHeader>

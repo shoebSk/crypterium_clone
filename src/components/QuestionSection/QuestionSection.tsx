@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PrimaryButton } from "../../shared/Button/Button";
+import { GradientButton, PrimaryButton } from "../../shared/Button/Button";
 import { FlexBox } from "../../shared/FlexBox/Flexbox";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import {
@@ -114,8 +114,10 @@ const QuestionSection = () => {
             </div>
           </AnswersList>
         </FAQList>
-        <FlexBox margin='22px 0 0 0'>
-          <PrimaryButton padding="20px 59px 20px 59px">Show More</PrimaryButton>
+        <FlexBox margin="22px 0 0 0">
+          <GradientButton>
+            <span>Show More</span>
+          </GradientButton>
         </FlexBox>
       </div>
     </QuestionSectionWrapper>

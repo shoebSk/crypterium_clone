@@ -10,6 +10,7 @@ import EquipmentSection from "./components/EquipmentSection/EquipmentSection";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { BannerWrap } from "./components/Header/headerStyles";
+import MiningAdvantage from "./components/MiningAdvantage/MiningAdvantage";
 import Miningfarm from "./components/MiningFarm/Miningfarm";
 import MiningPartner from "./components/MiningPartner/MiningPartner";
 import MissionSection from "./components/MissioSection/MissionSection";
@@ -39,6 +40,7 @@ function App() {
         <MissionSection />
         <PowerMining />
       </MainWrapper>
+      <MiningAdvantage />
       <AdvantageSection />
       <CalculatorBGWrap>
         <CalculatorSection />

@@ -136,8 +136,11 @@ const CalculatorSection = () => {
                 </CalculatorInputDiv>
               </div>
               <ButtonWrapper>
-                <PrimaryButton width="100%" padding="20px 20px">
-                  Login
+                <PrimaryButton
+                  hoverColor="#33d7b6"
+                  width="100%"
+                  padding="20px 20px">
+                  Calculate the cost of The Farm
                 </PrimaryButton>
               </ButtonWrapper>
             </CalculatorFOurGrid>

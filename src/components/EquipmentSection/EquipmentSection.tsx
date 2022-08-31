@@ -71,7 +71,7 @@ const EquipmentSection = () => {
           {DUMMY_PRODUCT_DATA.map((data) => (
             // <div>{data.name}</div>
             <div>
-              <FlexBox>
+              <FlexBox border='3px solid #f8f8f8' borderRadius='5px 5px 0 0'>
                 <LogoImage
                   width="180px"
                   height="185px"
@@ -100,16 +100,15 @@ const EquipmentSection = () => {
                 </BannerHeader>
 
                 <BannerHeader
-                  fontSize="20px"
+                  fontSize="17px"
                   fontWeight="100"
-                  marginbottom="2rem"
                   >
                   {data.powerOne}
                 </BannerHeader>
                 <BannerHeader
-                  fontSize="20px"
+                  fontSize="17px"
                   fontWeight="500"
-                  marginbottom="2rem"
+                  marginbottom="1rem"
                   >
                   {data.powerTwo}
                 </BannerHeader>
@@ -122,7 +121,7 @@ const EquipmentSection = () => {
                   {data.price}
                 </BannerHeader>
                 <FlexBox>
-                  <PrimaryButton padding='20px 59px 20px 59px'>Buy</PrimaryButton>
+                  <PrimaryButton hoverColor='#33d7b6' padding='20px 59px 20px 59px'>Buy</PrimaryButton>
                 </FlexBox>
               </EquipmentContentWrapper>
             </div>

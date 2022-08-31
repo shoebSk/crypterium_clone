@@ -24,15 +24,57 @@ export const LogoImage = styled.img<any>`
   width: ${(props) => (props.width ? props.width : null)};
   height: ${(props) => (props.height ? props.height : null)};
   object-fit: ${(props) => (props.objFit ? props.objFit : null)};
+  transition: .3s;
+
+  /* filter: ${(props) => props.filter ? props.filter : null}; */
 
   &:hover {
     /* fill: red; */
     cursor: pointer;
+    /* filter: grayscale(0); */
   }
 `;
 
 export const NavLink = styled.a`
   text-decoration: none;
+`;
+
+export const FlagContainer = styled.div<any>`
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  .first-logo {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #2f4a7e;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 4px;
+  }
+`;
+
+export const FlagListWrap = styled.div<any>`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #2f4a7e;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+
+  ul {
+    display: ${(props) => (props.show ? props.show : null)};
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    margin: 4px;
+  }
 `;
 
 export const NavItemSpan = styled.span<any>`
