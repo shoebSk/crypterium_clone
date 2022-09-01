@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MiningFarmWrapper = styled.div<any>`
   
   padding: ${(props) => props.padding ? props.padding : '140px 0'};
+  
 
   display: flex;
   align-items: baseline;
@@ -12,6 +13,9 @@ export const MiningFarmWrapper = styled.div<any>`
 
 export const MiningFarmDiv = styled.div<any>`
   width: ${(props) => (props.width ? props.width : null)};
+  margin: ${(props) => (props.margin ? props.margin : "0")};
+
+  
 
   .m-bottom {
     margin-bottom: 2rem;

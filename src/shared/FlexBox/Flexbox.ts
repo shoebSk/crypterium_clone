@@ -31,4 +31,15 @@ export const FlexBox = styled.div<any>`
     filter: grayscale(0);
     color: black;
   }
+
+  .mining-advantage-section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+  }
+
+
+
 `;
