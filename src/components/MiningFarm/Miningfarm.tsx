@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import {
   MiningFarmDiv,
@@ -8,9 +10,14 @@ import {
 import RightArrow from "../../assets/icons/right-arrow-icon.svg";
 
 const Miningfarm = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <MiningFarmWrapper>
-      <MiningFarmDiv width="35%">
+      <MiningFarmDiv width="35%" data-aos="fade-up">
+        {/* <div className="miningFarm_div miningFarm-appear"> */}
         <BannerHeader fontSize="17px" fontWeight="100" marginbottom="0">
           ABOUT MINIG FARM
         </BannerHeader>
@@ -26,20 +33,21 @@ const Miningfarm = () => {
         <PlayButton>
           <img src={RightArrow} alt="RightArrow" />
         </PlayButton>
+        {/* </div> */}
       </MiningFarmDiv>
       <MiningFarmDiv width="65%">
-        <div className="m-bottom">
+        <div className="m-bottom" data-aos="fade-up">
           Steelhead trumpeter, zingel saury <span> grouper swallower</span>
           threadfin pencilsmelt pufferfish hoki. Unicorn fish salmon shark:
           elasmobranch rohu wasp fish; yellowfin surgeonfish.
         </div>
-        <div className="m-bottom">
+        <div className="m-bottom" data-aos="fade-up">
           Halfbeak, "tiger shark long-finned char gar yellowfin tuna blue
           whiting, cavefish Redfish murray cod." Squirrelfish lungfish gudgeon
           Sevan trout luminous hake bleak bocaccio glassfish gulf menhaden. Chum
           salmon mooneye pleco bango blue-redstripe danio.
         </div>
-        <div>
+        <div data-aos="fade-up">
           Driftwood catfish lemon shark arowana; wormfish sailfish sand dab!
           Torpedo rockfish Black swallower snailfish candlefish Kafue pike
           sillago eel Pacific lamprey; king-of-the-salmon slipmouth, javelin,
