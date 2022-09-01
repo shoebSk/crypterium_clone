@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { FlexBox } from "../../shared/FlexBox/Flexbox";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import { ContactUsWrapper } from "../ContactUs/ContactUsStyle";
@@ -56,11 +58,15 @@ const Dummy_Data = [
 ];
 
 const MiningAdvantage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
+
   const id = Dummy_Data.map((data) => data.id);
 
   const [currentIndex, setCurrentIndex] = useState<any>(id);
 
-  console.log(currentIndex);
 
   return (
     <ContactUsWrapper>
@@ -70,7 +76,7 @@ const MiningAdvantage = () => {
         padding="140px 0"
         gap="8rem"
         overflow="hidden">
-        <MiningFarmDiv width="33.333%">
+        <MiningFarmDiv width="33.333%" data-aos="fade-up">
           <BannerHeader fontSize="17px" fontWeight="100" marginbottom="0">
             CRYPTERIUM STRONG SIZE
           </BannerHeader>
@@ -86,8 +92,8 @@ const MiningAdvantage = () => {
         </MiningFarmDiv>
         <MiningFarmDiv width="58.333%">
           <FlexBox>
-            {Dummy_Data.map((data) => (
-              <FlexBox direction="column">
+            {Dummy_Data.map((data,idx) => (
+              <FlexBox direction="column" key={idx}>
                 <MiningCard bgColor={data.bgColor}>
                   <FlexBox
                     direction="column"

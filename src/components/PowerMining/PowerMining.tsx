@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FlexBox } from "../../shared/FlexBox/Flexbox";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import POWER from "../../assets/images/power.png";
-import { GradientButton, PrimaryButton } from "../../shared/Button/Button";
+import { GradientButton } from "../../shared/Button/Button";
 
 const PowerMining = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <FlexBox gap="4rem">
-      <div>
+      <div data-aos="fade-right">
         <BannerHeader
           fontSize="40px"
           fontWeight="600"

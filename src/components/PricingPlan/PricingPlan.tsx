@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import BTC from "../../assets/icons/btc.png";
 import RIPPLE from "../../assets/icons/ripple.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import MONERO from "../../assets/icons/monero.png";
 import { FlexBox } from "../../shared/FlexBox/Flexbox";
 import { LogoImage } from "../Header/headerStyles";
@@ -16,6 +18,9 @@ import {
 import { PrimaryButton } from "../../shared/Button/Button";
 
 const PricingPlan = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <PricingPanelWrapper>
       <PricingPanelDiv marginBottom="60px" maxWidth="520px" margin="0 auto">
@@ -91,7 +96,10 @@ const PricingPlan = () => {
           </FlexBox>
         </FlexBox>
         <PricingTabContainer>
-          <PricingTab borderColor="#4262c1" border="5px solid">
+          <PricingTab
+            borderColor="#4262c1"
+            border="5px solid"
+            data-aos="flip-left">
             <div>
               <BannerHeader
                 fontSize="30px"
@@ -150,7 +158,10 @@ const PricingPlan = () => {
               </PrimaryButton>
             </div>
           </PricingTab>
-          <PricingTab borderColor="#694e96" border="5px solid">
+          <PricingTab
+            borderColor="#694e96"
+            border="5px solid"
+            data-aos="flip-left">
             <div>
               <BannerHeader
                 fontSize="30px"
@@ -210,6 +221,7 @@ const PricingPlan = () => {
             </div>
           </PricingTab>
           <PricingTab
+            data-aos="flip-left"
             padding="115px 25px 40px"
             borderColor="#4262c1"
             bgColor="#43c1a8"
@@ -283,7 +295,10 @@ const PricingPlan = () => {
               </PrimaryButton>
             </div>
           </PricingTab>
-          <PricingTab borderColor="#fb395e" border="5px solid">
+          <PricingTab
+            borderColor="#fb395e"
+            border="5px solid"
+            data-aos="flip-left">
             <div>
               <BannerHeader
                 fontSize="30px"

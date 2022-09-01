@@ -24,9 +24,9 @@ export const LogoImage = styled.img<any>`
   width: ${(props) => (props.width ? props.width : null)};
   height: ${(props) => (props.height ? props.height : null)};
   object-fit: ${(props) => (props.objFit ? props.objFit : null)};
-  transition: .3s;
+  transition: 0.3s;
 
-  /* filter: ${(props) => props.filter ? props.filter : null}; */
+  /* filter: ${(props) => (props.filter ? props.filter : null)}; */
 
   &:hover {
     /* fill: red; */
@@ -37,6 +37,70 @@ export const LogoImage = styled.img<any>`
 
 export const NavLink = styled.a`
   text-decoration: none;
+  /* position: relative; */
+
+  .home-nav {
+    padding: 10px 0px;
+  }
+  .page-nav {
+    padding: 10px 0px;
+  }
+
+  .dropdown:hover {
+    cursor: pointer;
+  }
+
+  &:hover .dropdown_menu li {
+    display: block;
+  }
+  .dropdown_menu {
+    position: absolute;
+    top: 75%;
+    left: 31%;
+
+    z-index: 1;
+  }
+  .pages {
+    position: absolute;
+    top: 75%;
+    left: 36.6%;
+    z-index: 1;
+  }
+  .dropdown_menu li {
+    display: none;
+    color: #fff;
+    background-color: #34495e;
+    padding: 17px 40px;
+    font-size: 16px;
+    opacity: 0;
+  }
+
+  &:hover .dropdown_menu--animated {
+    display: block;
+  }
+  .dropdown_menu--animated {
+    display: none;
+  }
+  .dropdown_menu--animated li {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown_menu-6 {
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
 `;
 
 export const FlagContainer = styled.div<any>`

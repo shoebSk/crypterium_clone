@@ -18,7 +18,6 @@ import { useState } from "react";
 const Header = () => {
   const [showFlag, setShowFlag] = useState(false);
   console.log(showFlag);
-  
 
   return (
     <HeaderWrap>
@@ -33,10 +32,25 @@ const Header = () => {
         </div>
         <FlexBox display="flex" gap="40px">
           <NavLink href="#">
-            <NavItemSpan className="arrow-down">Home</NavItemSpan>
+            <NavItemSpan className="arrow-down home-nav">Home</NavItemSpan>
+            <ul className="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+              <li className="dropdown_item-1">Home Page</li>
+              <li className="dropdown_item-2">Home Slider</li>
+              <li className="dropdown_item-3">Agency</li>
+              <li className="dropdown_item-4">Landing Wallet</li>
+              <li className="dropdown_item-5">Item 5</li>
+            </ul>
           </NavLink>
           <NavLink href="#">
-            <NavItemSpan className="arrow-down">Pages</NavItemSpan>
+            <NavItemSpan className="arrow-down page-nav">Pages</NavItemSpan>
+            <ul className="dropdown_menu pages dropdown_menu--animated dropdown_menu-6">
+              <li className="dropdown_item-1">About</li>
+              <li className="dropdown_item-2">Services</li>
+              <li className="dropdown_item-3">Blog Post</li>
+              <li className="dropdown_item-4">Blog</li>
+              <li className="dropdown_item-5">Pricing Table</li>
+              <li className="dropdown_item-5">Contact</li>
+            </ul>
           </NavLink>
           <NavLink href="#">
             <NavItemSpan>White Papers</NavItemSpan>

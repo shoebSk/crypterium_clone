@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PrimaryButton } from "../../shared/Button/Button";
 import { FlexBox } from "../../shared/FlexBox/Flexbox";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { LogoImage } from "../Header/headerStyles";
 import {
   EquipmentContentWrapper,
@@ -44,6 +46,9 @@ const DUMMY_PRODUCT_DATA = [
 ];
 
 const EquipmentSection = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <div>
@@ -67,11 +72,11 @@ const EquipmentSection = () => {
         </BannerHeader>
       </div>
       <div>
-        <EquipmentSectionWrapper>
-          {DUMMY_PRODUCT_DATA.map((data) => (
+        <EquipmentSectionWrapper data-aos="fade-up">
+          {DUMMY_PRODUCT_DATA.map((data, idx) => (
             // <div>{data.name}</div>
-            <div>
-              <FlexBox border='3px solid #f8f8f8' borderRadius='5px 5px 0 0'>
+            <div key={idx}>
+              <FlexBox border="3px solid #f8f8f8" borderRadius="5px 5px 0 0">
                 <LogoImage
                   width="180px"
                   height="185px"
@@ -85,8 +90,7 @@ const EquipmentSection = () => {
                   color="black"
                   fontSize="20px"
                   fontWeight="500"
-                  marginbottom="2rem"
-                  >
+                  marginbottom="2rem">
                   {data.name}
                 </BannerHeader>
 
@@ -94,34 +98,28 @@ const EquipmentSection = () => {
                   color="black"
                   fontSize="20px"
                   fontWeight="500"
-                  marginbottom="2rem"
-                  >
+                  marginbottom="2rem">
                   Power :
                 </BannerHeader>
 
-                <BannerHeader
-                  fontSize="17px"
-                  fontWeight="100"
-                  >
+                <BannerHeader fontSize="17px" fontWeight="100">
                   {data.powerOne}
                 </BannerHeader>
                 <BannerHeader
                   fontSize="17px"
                   fontWeight="500"
-                  marginbottom="1rem"
-                  >
+                  marginbottom="1rem">
                   {data.powerTwo}
                 </BannerHeader>
-                <BannerHeader
-                  color="#43c1a8"
-                  fontSize="20px"
-                  fontWeight="600"
-                  
-                  >
+                <BannerHeader color="#43c1a8" fontSize="20px" fontWeight="600">
                   {data.price}
                 </BannerHeader>
                 <FlexBox>
-                  <PrimaryButton hoverColor='#33d7b6' padding='20px 59px 20px 59px'>Buy</PrimaryButton>
+                  <PrimaryButton
+                    hoverColor="#33d7b6"
+                    padding="20px 59px 20px 59px">
+                    Buy
+                  </PrimaryButton>
                 </FlexBox>
               </EquipmentContentWrapper>
             </div>

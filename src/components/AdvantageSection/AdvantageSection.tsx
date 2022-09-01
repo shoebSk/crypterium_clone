@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import { LogoImage } from "../Header/headerStyles";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   AdvantageCard,
   AdvantageSectionContainer,
@@ -54,6 +56,9 @@ const DUMMY_DATA = [
 ];
 
 const AdvantageSection = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <AdvantageSectionWrapper>
       <AdvantageSectionContainer>
@@ -78,13 +83,17 @@ const AdvantageSection = () => {
           </BannerHeader>
         </div>
         <div>
-          <ThreeColumns>
+          <ThreeColumns
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
             {DUMMY_DATA.map((data, idx) => (
               //   <div key={idx}>{data.title}</div>
-              <AdvantageCard>
+              <AdvantageCard key={idx}>
                 {/* object-fit: contain */}
                 <LogoImage
-                objFit='contain'
+                  objFit="contain"
                   width="55px"
                   height="55px"
                   src={data.imgUrl}
@@ -101,7 +110,7 @@ const AdvantageSection = () => {
                   {data.title}
                 </BannerHeader>
                 <BannerHeader
-                lineHeight='1.7'
+                  lineHeight="1.7"
                   fontSize="17px"
                   fontWeight="100"
                   marginbottom="2rem"
