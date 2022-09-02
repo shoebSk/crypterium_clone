@@ -16,7 +16,7 @@ const MissionSection = () => {
   }, []);
   return (
     <MissionSectionWrapper>
-      <FlexBox gap="6rem">
+      <FlexBox gap="6rem" className='missionSectionREsponsive'>
         <div>
           <img src={MISSION} alt="MISSION" />
         </div>

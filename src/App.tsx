@@ -4,6 +4,7 @@ import BlogSection from "./components/BlogSection/BlogSection";
 import CalculatorSection from "./components/CalculatorSection/CalculatorSection";
 import { CalculatorBGWrap } from "./components/CalculatorSection/CalculatorSectionStyle";
 import ContactUs from "./components/ContactUs/ContactUs";
+import CryptoGraph from "./components/CryptoGraph/CryptoGraph";
 import DataCenter from "./components/DataCenter/DataCenter";
 import DataCenterImages from "./components/DataCenter/DataCenterImages";
 import EquipmentSection from "./components/EquipmentSection/EquipmentSection";
@@ -30,40 +31,45 @@ function App() {
       <BannerWrap>
         <Header />
       </BannerWrap>
-      <MainWrapper>
-        <BannerInfo />
-        <Miningfarm />
-        <PricingPlan />
-      </MainWrapper>
-      <PurchaseSection />
-      <MainWrapper>
-        <MissionSection />
-        <PowerMining />
-      </MainWrapper>
-      <MiningAdvantage />
-      <AdvantageSection />
-      <CalculatorBGWrap>
-        <CalculatorSection />
-      </CalculatorBGWrap>
-      <MainWrapper>
-        <EquipmentSection />
-        <DataCenter />
-      </MainWrapper>
-      <DataCenterImages />
-      <WorldMap />
-      <MainWrapper maxWidth='970px'>
-        <QuestionSection />
-      </MainWrapper>
-      <BlogSection />
-      <CalculatorBGWrap height='100vh' marginBottom='0'>
-        <TestimonialSection />
-      </CalculatorBGWrap>
-      <MainWrapper>
-        <MiningPartner />
-      </MainWrapper>
-      <ContactUs />
+      <div>
+        <MainWrapper>
+          <BannerInfo />
+          <Miningfarm />
+          <PricingPlan />
+        </MainWrapper>
+        <PurchaseSection />
+        <MainWrapper>
+          <MissionSection />
+          <PowerMining />
+        </MainWrapper>
+        <MiningAdvantage />
+        <AdvantageSection />
+        <MainWrapper>
+          <CryptoGraph />
+        </MainWrapper>
+        <CalculatorBGWrap height="100%">
+          <CalculatorSection />
+        </CalculatorBGWrap>
+        <MainWrapper>
+          <EquipmentSection />
+          <DataCenter />
+        </MainWrapper>
+        <DataCenterImages />
+        <WorldMap />
+        <MainWrapper maxWidth="970px">
+          <QuestionSection />
+        </MainWrapper>
+        <BlogSection />
+        <CalculatorBGWrap height="100vh" marginBottom="0">
+          <TestimonialSection />
+        </CalculatorBGWrap>
+        <MainWrapper>
+          <MiningPartner />
+        </MainWrapper>
+        <ContactUs />
 
-      <Footer />
+        <Footer />
+      </div>
     </Container>
   );
 }

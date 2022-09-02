@@ -32,7 +32,7 @@ export const FlexBox = styled.div<any>`
     color: black;
   }
 
-  .mining-advantage-section{
+  .mining-advantage-section {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -40,6 +40,23 @@ export const FlexBox = styled.div<any>`
     align-items: center;
   }
 
+  @media (max-width: 850px) {
+    .mining-advantage-section {
+      flex-wrap: wrap;
+      padding: 0 15px;
+    }
+    .miningAdvantageRes {
+      width: 100%;
+      margin: 0;
+    }
+  }
 
-
+  .mySwiper {
+    /* background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    overflow: hidden;
+  }
 `;

@@ -6,8 +6,9 @@ export const EquipmentSectionWrapper = styled.div`
   grid-gap: 2rem;
 
   margin-top: 5rem;
+  padding: 0 15px;
 
-  @media (max-width: 840px) {
+  @media (max-width: 940px) {
     grid-template-columns: repeat(3, 1fr);
   }
   @media (max-width: 640px) {

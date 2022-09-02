@@ -9,6 +9,11 @@ export const BannerWrapper = styled.div`
   .m-bottom {
     margin-bottom: 12px;
   }
+
+  @media (max-width: 850px) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 `;
 
 export const BannerHeader = styled.h1<any>`
@@ -19,7 +24,8 @@ export const BannerHeader = styled.h1<any>`
   color: ${(props) => (props.color ? props.color : null)};
   text-align: ${(props) => (props.textAlign ? props.textAlign : null)};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : null)};
-  letter-spacing: ${(props) => (props.letterSpacing ? props.letterSpacing : null)};
+  letter-spacing: ${(props) =>
+    props.letterSpacing ? props.letterSpacing : null};
   cursor: ${(props) => (props.cursor ? props.cursor : null)};
   transition: 0.3s;
   opacity: ${(props) => (props.opacity ? props.opacity : null)};

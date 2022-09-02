@@ -10,7 +10,7 @@ export const BlogContainer = styled.div`
 `;
 
 export const BlogCardWrap = styled.div`
-  padding: 3rem;
+  padding: 40px 40px 60px;
   display: flex;
   flex-direction: column;
   align-items: baseline;

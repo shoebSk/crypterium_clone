@@ -10,7 +10,7 @@ import {
 
 const ContactUs = () => {
   return (
-    <ContactUsWrapper>
+    <ContactUsWrapper padding='0 15px'>
       <ContactUsContainer>
         <ContactUsContent>
           <BannerHeader

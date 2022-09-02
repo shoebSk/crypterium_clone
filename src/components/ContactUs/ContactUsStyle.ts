@@ -3,8 +3,24 @@ import styled from "styled-components";
 export const ContactUsWrapper = styled.div<any>`
   background-color: #292b30;
   color: #fff;
-  margin-top: ${(props) => props.marginTop ? props.marginTop : null};
-  padding: ${(props) => props.padding ? props.padding : null};
+  margin-top: ${(props) => (props.marginTop ? props.marginTop : null)};
+  padding: ${(props) => (props.padding ? props.padding : null)};
+
+  @media (max-width: 900px) {
+    .footer-res {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-text-res {
+      justify-content: center;
+      text-align: center !important;
+    }
+    .footer-main-menu-res{
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
 `;
 export const ContactUsContainer = styled.div`
   padding: 140px 0;
@@ -24,7 +40,8 @@ export const ContactUsFormContainer = styled.div`
   flex: 0 1 100%;
 
   flex-direction: row;
-
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   list-style: none;
   margin-left: -15px;
@@ -32,7 +49,7 @@ export const ContactUsFormContainer = styled.div`
   padding: 0;
 
   .form-div {
-    max-width: 50%;
+    max-width: 47%;
 
     flex: 0 0 50%;
   }
@@ -48,13 +65,15 @@ export const ContactUsFormContainer = styled.div`
   input {
     border: none;
     background: transparent;
+    outline: none;
+    width: 100%;
   }
 
-  input::placeholder{
+  input::placeholder {
     font-size: 17px;
   }
 
-  textarea::placeholder{
+  textarea::placeholder {
     font-size: 17px;
   }
 
@@ -79,7 +98,7 @@ export const ContactUsFormContainer = styled.div`
 
   .textfield {
     display: block;
-    width: 90%;
+    width: 86%;
     margin-bottom: 1.5rem;
     background: #34363b;
     border: none;
@@ -99,5 +118,14 @@ export const ContactUsFormContainer = styled.div`
   .textfield:hover {
     background-color: #fff;
     color: #c9c9c9;
+  }
+
+  @media (max-width: 900px) {
+    display: block;
+    flex-direction: column;
+
+    .form-div {
+      max-width: 100%;
+    }
   }
 `;

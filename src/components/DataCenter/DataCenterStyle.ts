@@ -46,6 +46,31 @@ export const DataCenterImageWrpper = styled.div`
     grid-column: 5 / 7;
     grid-row: 3 / 3;
   }
+
+  @media (max-width: 850px) {
+    grid-auto-rows: minmax(180px, auto);
+    .first {
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+    }
+    .second {
+      grid-column: 4 / 7;
+      grid-row: 1 / 3;
+    }
+    .third {
+      grid-column: 1 / 4;
+      grid-row: 3 / 3;
+    }
+
+    .fourth {
+      grid-column: 4 / 7;
+      grid-row: 3 / 3;
+    }
+    .fifth {
+      grid-column: 1 / 4;
+      grid-row: 4 / 5;
+    }
+  }
 `;
 
 export const DataImagesDiv = styled.div`
@@ -66,5 +91,17 @@ export const DataImagesDiv = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+`;
+
+export const DataCenterRes = styled.div`
+  @media (max-width: 850px) {
+    .data-center-res {
+      flex-wrap: wrap;
+      padding: 65px 15px 0 15px;
+    }
+  }
+  .data-center-div-res {
+    width: 100%;
   }
 `;

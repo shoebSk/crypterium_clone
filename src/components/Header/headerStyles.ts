@@ -3,6 +3,14 @@ import BannerImage from "../../assets/images/bg.png";
 
 export const MissionSectionWrapper = styled.div`
   padding: 140px 0;
+
+  @media (max-width: 850px) {
+    .missionSectionREsponsive {
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 15px;
+    }
+  }
 `;
 
 export const BannerWrap = styled.div`
@@ -34,6 +42,39 @@ export const LogoImage = styled.img<any>`
     /* filter: grayscale(0); */
   }
 `;
+// 990 px
+
+export const ResponsiveHeaderContainer = styled.div`
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.5s;
+
+  .hamburger {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .hamburger {
+      display: block;
+    }
+    .active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(-315deg);
+      transform: translateY(8px) rotate(-315deg);
+      width: 300%;
+    }
+    .active .bar:nth-child(3) {
+      -webkit-transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(-10px) rotate(-45deg);
+      width: 300%;
+    }
+  }
+`;
 
 export const NavLink = styled.a`
   text-decoration: none;
@@ -56,14 +97,14 @@ export const NavLink = styled.a`
   .dropdown_menu {
     position: absolute;
     top: 75%;
-    left: 31%;
+    left: 29%;
 
     z-index: 1;
   }
   .pages {
     position: absolute;
     top: 75%;
-    left: 36.6%;
+    left: 34.6%;
     z-index: 1;
   }
   .dropdown_menu li {

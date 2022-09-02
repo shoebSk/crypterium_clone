@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import {
   MiningFarmDiv,
+  MiningFarmResponsiveWrapper,
   MiningFarmWrapper,
   PlayButton,
 } from "./MiningFarmStyle";
@@ -15,8 +16,14 @@ const Miningfarm = () => {
   }, []);
 
   return (
-    <MiningFarmWrapper>
-      <MiningFarmDiv width="35%" data-aos="fade-up">
+    <MiningFarmResponsiveWrapper>
+
+    
+    <MiningFarmWrapper padding="140px 15px" className="miningFarmMedia" alignItems='center'>
+      <MiningFarmDiv
+        width="41%"
+        data-aos="fade-up"
+        className="miningFarmDivMedia">
         {/* <div className="miningFarm_div miningFarm-appear"> */}
         <BannerHeader fontSize="17px" fontWeight="100" marginbottom="0">
           ABOUT MINIG FARM
@@ -35,7 +42,7 @@ const Miningfarm = () => {
         </PlayButton>
         {/* </div> */}
       </MiningFarmDiv>
-      <MiningFarmDiv width="65%">
+      <MiningFarmDiv width="58%" className="miningFarmDivMedia">
         <div className="m-bottom" data-aos="fade-up">
           Steelhead trumpeter, zingel saury <span> grouper swallower</span>
           threadfin pencilsmelt pufferfish hoki. Unicorn fish salmon shark:
@@ -56,6 +63,7 @@ const Miningfarm = () => {
         </div>
       </MiningFarmDiv>
     </MiningFarmWrapper>
+    </MiningFarmResponsiveWrapper>
   );
 };
 

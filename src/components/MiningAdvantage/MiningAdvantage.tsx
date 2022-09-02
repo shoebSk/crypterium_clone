@@ -25,6 +25,7 @@ const MiningAdvantage = () => {
       <FlexBox margin="0 auto" padding="140px 0" gap="8rem">
         <div className="mining-advantage-section">
           <MiningFarmDiv
+            className="miningAdvantageRes"
             width="27.333%"
             data-aos="fade-up"
             margin="0 0 0 11rem">
@@ -45,7 +46,10 @@ const MiningAdvantage = () => {
             </BannerHeader>
           </MiningFarmDiv>
 
-          <MiningFarmDiv width="58.333%" margin="0 -7rem 0 0">
+          <MiningFarmDiv
+            className="miningAdvantageRes"
+            width="58.333%"
+            margin="0 -7rem 0 0">
             <FlexBox>
               <Swiper
                 spaceBetween={30}

@@ -5,13 +5,15 @@ import "aos/dist/aos.css";
 import { BannerHeader } from "../BannerInfo/BannerStyle";
 import POWER from "../../assets/images/power.png";
 import { GradientButton } from "../../shared/Button/Button";
+import { PowerSectionResponsiveness } from "./PoerMiningStyle";
 
 const PowerMining = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <FlexBox gap="4rem">
+    <PowerSectionResponsiveness>
+    <FlexBox gap="4rem" className='powerSection'>
       <div data-aos="fade-right">
         <BannerHeader
           fontSize="40px"
@@ -37,6 +39,7 @@ const PowerMining = () => {
         </div>
       </div>
     </FlexBox>
+    </PowerSectionResponsiveness>
   );
 };
 

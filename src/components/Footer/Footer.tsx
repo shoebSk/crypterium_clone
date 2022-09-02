@@ -13,10 +13,10 @@ import { FlexBox } from "../../shared/FlexBox/Flexbox";
 const Footer = () => {
   return (
     <ContactUsWrapper marginTop="235px" padding="140px 0 45px 0">
-      <MainWrapper display="flex">
+      <MainWrapper display="flex" className='footer-res'>
         <FooterContent>
           <LogoImage height="42px" src={SiteLogo} alt="SiteLogo" />
-          <FlexBox justifyContent="flex-start" margin="30px 0" marginTop='0' gap="7px">
+          <FlexBox className="footer-text-res" justifyContent="flex-start" margin="30px 0" marginTop='0' gap="7px">
             <div>
               <LogoImage height="24px" src={Twitter} alt="SiteLogo" hoverColor='red'/>
             </div>
@@ -33,11 +33,12 @@ const Footer = () => {
             Privacy Policy | Sitemap
           </span>
         </FooterContent>
-        <FooterContent>
-          <BannerHeader fontSize="24px" fontWeight="300" textAlign="left">
+        <FooterContent className="footer-text-res">
+          <BannerHeader fontSize="24px" fontWeight="300" className="footer-text-res" textAlign="left">
             Contact Information
           </BannerHeader>
           <BannerHeader
+          className="footer-text-res"
             lineHeight="1.4"
             fontSize="17px"
             fontWeight="300"
@@ -54,10 +55,10 @@ const Footer = () => {
           </BannerHeader>
         </FooterContent>
         <FooterContent>
-          <BannerHeader fontSize="24px" fontWeight="300" textAlign="left">
+          <BannerHeader className="footer-text-res" fontSize="24px" fontWeight="300" textAlign="left">
             Main menu
           </BannerHeader>
-          <FlexBox justifyContent="space-between">
+          <FlexBox justifyContent="space-between" className='footer-main-menu-res'>
             <div>
               <BannerHeader fontSize="17px" fontWeight="300" textAlign="left">
                 Home

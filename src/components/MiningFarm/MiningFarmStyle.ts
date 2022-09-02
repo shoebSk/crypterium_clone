@@ -1,21 +1,31 @@
 import styled from "styled-components";
 
 export const MiningFarmWrapper = styled.div<any>`
-  
-  padding: ${(props) => props.padding ? props.padding : '140px 0'};
-  
+  padding: ${(props) => (props.padding ? props.padding : "140px 0")};
 
   display: flex;
-  align-items: baseline;
+  align-items: ${(props) => (props.alignItems ? props.alignItems : "baseline")};
+
   width: 100%;
-  gap: ${(props) => props.gap ? props.gap : null};
+  gap: ${(props) => (props.gap ? props.gap : null)};
+`;
+
+export const MiningFarmResponsiveWrapper = styled.div`
+  @media (max-width: 850px) {
+    .miningFarmMedia {
+      display: block;
+      padding: 100px 15px;
+    }
+    .miningFarmDivMedia {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
 `;
 
 export const MiningFarmDiv = styled.div<any>`
   width: ${(props) => (props.width ? props.width : null)};
   margin: ${(props) => (props.margin ? props.margin : "0")};
-
-  
 
   .m-bottom {
     margin-bottom: 2rem;

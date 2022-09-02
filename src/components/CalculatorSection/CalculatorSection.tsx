@@ -45,7 +45,7 @@ const CalculatorSection = () => {
                 fontSize="17px"
                 fontWeight="100"
                 marginbottom="1rem">
-                Choose the model of the video card
+                Choose the model 
               </BannerHeader>
               <CalculatorSelect marginBottom="1.5rem">
                 <option value="sefwef">Nvidia Gderoce 1080 Ti1</option>
@@ -101,7 +101,7 @@ const CalculatorSection = () => {
                   lineHeight="1.7"
                   fontSize="17px"
                   fontWeight="100">
-                  Number of video cards
+                  Number of video
                 </BannerHeader>
                 <CalculatorSelect>
                   <option value="sefwef">8 Video Cards</option>
