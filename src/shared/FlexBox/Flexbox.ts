@@ -21,6 +21,7 @@ export const FlexBox = styled.div<any>`
   position: ${(props) => (props.position ? props.position : null)};
   gap: ${(props) => (props.gap ? props.gap : null)};
 
+
   transition: 0.3s;
 
   .mining-plans {

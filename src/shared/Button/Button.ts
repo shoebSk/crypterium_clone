@@ -24,13 +24,17 @@ export const PrimaryButton = styled.button<any>`
   }
 `;
 
-export const SecondaryButton = styled.button`
+export const SecondaryButton = styled.button<any>`
   background-color: transparent;
   color: #fff;
   text-decoration: underline;
   outline: 0;
   border: none;
   transition: color 0.3s ease-in-out;
+
+  @media (max-width: 1024px) {
+    color: #555;
+  }
 `;
 
 export const ButtonWrapper = styled.div`

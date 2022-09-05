@@ -19,4 +19,9 @@ export const TestimonialContainer = styled.div`
     color: #fff;
     align-self: flex-start;
   }
+
+  .border-left{
+    border-left: 2px solid #fff;
+  }
+
 `;

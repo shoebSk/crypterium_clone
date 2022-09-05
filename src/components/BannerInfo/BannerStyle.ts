@@ -20,6 +20,7 @@ export const BannerHeader = styled.h1<any>`
   font-size: ${(props) => (props.fontSize ? props.fontSize : null)};
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : null)};
   margin: ${(props) => (props.margin ? props.margin : null)};
+  padding: ${(props) => (props.padding ? props.padding : null)};
   margin-bottom: ${(props) => (props.marginbottom ? props.marginbottom : null)};
   color: ${(props) => (props.color ? props.color : null)};
   text-align: ${(props) => (props.textAlign ? props.textAlign : null)};
@@ -29,6 +30,7 @@ export const BannerHeader = styled.h1<any>`
   cursor: ${(props) => (props.cursor ? props.cursor : null)};
   transition: 0.3s;
   opacity: ${(props) => (props.opacity ? props.opacity : null)};
+  
   &:hover {
     color: ${(props) => (props.hoverColor ? props.hoverColor : null)};
   }
